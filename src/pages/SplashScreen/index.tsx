@@ -1,15 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import marvelLogo from '../../assets/MarvelLogo.png';
 import { Container, Logo } from './styles';
+import { redirect } from '../../hooks/redirect';
 
 export function SplashScreen() {
-  const timeSplashScreen = 3;
-
-  useEffect(() => {
-    setTimeout(() => {
-      window.location.href = `${document.location.href}home`;
-    }, timeSplashScreen * 1000)
-  });
+  redirect(3, 'home');
 
   return (
     <Container>
