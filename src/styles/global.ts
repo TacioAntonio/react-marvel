@@ -10,6 +10,13 @@ export default createGlobalStyle`
   html, body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     height: 100%;
-    background: #e60012;
+    background: #1e1e1e;
+    font-size: 100%;
+    overflow-y:hidden;
+    overflow-x:hidden;
+  }
+
+  #root {
+    height: 100%;
   }
 `;

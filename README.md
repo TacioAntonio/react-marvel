@@ -12,7 +12,7 @@ Github flow
 Remote
 > git add <file>
 > git commit -m <message>
-> git push origin master
+> git push origin master #
 
 Retornando commits
 > git reset HEAD~1

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import marvelLogo from '../../assets/MarvelLogo.png';
-import { Logo } from './styles';
+import { Container, Logo } from './styles';
 
 export function SplashScreen() {
   const timeSplashScreen = 3;
@@ -11,5 +11,9 @@ export function SplashScreen() {
     }, timeSplashScreen * 1000)
   });
 
-  return <Logo src={marvelLogo} alt="Logo da marvel" />;
+  return (
+    <Container>
+      <Logo src={marvelLogo} alt="Logo da marvel" />
+    </Container>
+  );
 }
