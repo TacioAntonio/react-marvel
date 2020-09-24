@@ -11,7 +11,7 @@ export const Container = styled.div`
   @media(min-width: 575.98px) {
     font-size: 2em;
   }
-`
+`;
 
 export const Image = styled.img`
   width: 164px;
@@ -21,4 +21,4 @@ export const Image = styled.img`
     width: 220px;
     height: 220px;
   }
-`
+`;
