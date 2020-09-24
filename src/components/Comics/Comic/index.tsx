@@ -1,5 +1,6 @@
 import React from 'react';
 import { UL, Image } from '../styles';
+import { ComicNotExist } from '../ComicNotExist/index';
 
 interface IComics {
   title: string,
@@ -15,7 +16,7 @@ export const Comic = ({ comicsHero }: IProp) => {
   return (
     <UL>
       {
-        comicsHero.map(({ title, thumbnail, url }: IComics, i: number) => {
+       comicsHero.length > 0 ? comicsHero.map(({ title, thumbnail, url }: IComics, i: number) => {
           return (
             <li key={i} >
               <a href={url} target="_blank">
@@ -23,7 +24,7 @@ export const Comic = ({ comicsHero }: IProp) => {
               </a>
             </li>
           )
-        })
+        }) : <ComicNotExist/>
       }
     </UL>
   )
