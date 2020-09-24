@@ -24,7 +24,6 @@ export function Home() {
     let thumbnail: string = '';
     let exist: boolean = false;
 
-    // ENV
     const request = await api.get('/v1/public/characters', {
       params: {
           name: valueHero,

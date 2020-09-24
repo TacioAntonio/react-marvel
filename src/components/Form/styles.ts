@@ -4,6 +4,8 @@ export const FormStyled = styled.form`
   color: red;
   background: #db3833;
   padding: 12px;
+  position: relative;
+  z-index: 1;
 
   @media(min-width: 575.98px) {
     display: flex;
