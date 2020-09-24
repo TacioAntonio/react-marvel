@@ -5,9 +5,5 @@ import { redirect } from '../../hooks/redirect';
 export const Error404 = () => {
   redirect(3, 'home');
 
-  return(
-    <>
-      <PageNotExist />
-    </>
-  )
+  return <PageNotExist />;
 }

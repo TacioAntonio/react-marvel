@@ -19,4 +19,32 @@ export default createGlobalStyle`
   #root {
     height: 100%;
   }
+
+  #modal-comics {
+    height: 100%;
+  }
+
+  #modal-comics > div {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+  }
+
+  #comics::-webkit-scrollbar {
+    height: 12px;
+  }
+
+  #comics::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+
+  #comics::-webkit-scrollbar-thumb {
+    background-color: #0f0f0f;
+    outline: 1px solid slategrey;
+  }
 `;

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import api from '../../services/api';
-// import useAsyncEffect from 'use-async-effect';
 import { Form } from '../../components/Form/index';
 import { HeroItem } from '../../components/HeroItem/index';
 import { HeroNotExist } from '../../components/HeroNotExist/index';
+import { TS, HASH, API_KEY } from '../../config/permissionApi';
 
 interface Hero {
   name: string,
@@ -14,7 +14,7 @@ interface Hero {
 
 export function Home() {
   const [hero, setHero] = useState<Hero>();
-  const [valueHero, setValueHero] = useState('');
+  const [valueHero, setValueHero] = useState<string>('');
 
    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -28,9 +28,9 @@ export function Home() {
     const request = await api.get('/v1/public/characters', {
       params: {
           name: valueHero,
-          ts: '1600731265805',
-          hash: '4609a9aad0fda6080fcc594861710bfc',
-          apikey: 'd01bdc5ca7cbca17fc317db4bda37e2b'
+          ts: TS,
+          hash: HASH,
+          apikey: API_KEY
       }
     });
 

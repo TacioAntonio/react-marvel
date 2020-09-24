@@ -10,6 +10,10 @@ export const Container = styled.div`
   color: white;
   padding: 0 12px;
 
+  p {
+    padding-bottom: 12px;
+  }
+
   @media(min-width: 575.98px) {
     p {
       width: 66ch;
@@ -39,4 +43,18 @@ export const NameHero = styled.h2`
     width: 3em;
     overflow: hidden;
     font-size: 2em;
-`
+`;
+
+export const ComicsButton = styled.button`
+  background-color: #f44336;
+  border: #f44336;
+  border-radius: 12px;
+  padding: 6px 12px;
+  color: white;
+
+  @media(min-width: 575.98px) {
+      font-size: 1.2em;
+      padding: 6px 12px;
+      cursor: pointer;
+  }
+`;
