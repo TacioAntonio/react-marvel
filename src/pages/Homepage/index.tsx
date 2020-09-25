@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import api from '../../services/api';
 import { Form } from '../../components/Form/index';
-import { HeroItem } from '../../components/HeroItem/index';
-import { HeroNotExist } from '../../components/HeroItem/HeroNotExist/index';
+import { HeroItem } from '../../components/Heros/HeroItem/index';
+import { HeroNotExist } from '../../components/Heros/HeroNotExist/index';
 import { TS, HASH, API_KEY } from '../../config/permissionApi';
 
 interface Hero {
