@@ -3,7 +3,6 @@
 ![Marvel](./img/image.gif)
 > This application uses the [API Marvel](https://developer.marvel.com) for information.
 
-
 ### Installation
 ```sh
 $ git clone https://github.com/TacioAntonio/react-marvel

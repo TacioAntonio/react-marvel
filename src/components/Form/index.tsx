@@ -11,6 +11,7 @@ export const Form = ({ onSubmit, valueHero, changeNameHero }: IProp) => {
   return (
     <FormStyled onSubmit={onSubmit}>
       <Input
+        data-testid="heroInput"
         type="text"
         placeholder="Hero"
         value={valueHero}

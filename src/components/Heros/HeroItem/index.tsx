@@ -66,12 +66,13 @@ export const HeroItem = ({ name, description, thumbnail }: IProp) => {
   return(
     <Container>
       <ContainerImageName>
-        <Image src={thumbnail} alt={name} />
-        <NameHero>{name}</NameHero>
+        <Image data-testid="heroThumbnail" src={thumbnail} alt={name} />
+        <NameHero data-testid="heroName">{name}</NameHero>
       </ContainerImageName>
-      <p>{description}</p>
+      <p data-testid="heroDescription">{description}</p>
 
       <ComicsButton
+        data-testid="comicsButton"
         onClick={getComics}
       >
         Comics
